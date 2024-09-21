@@ -1,0 +1,56 @@
+.flight-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.flight-info {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.flight-info div {
+  display: flex;
+  flex-direction: column;
+}
+
+.airport,
+.duration,
+.airline {
+  margin-top: 5px;
+}
+
+.flight-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flight-price button {
+  padding: 10px 20px;
+  background-color: #6200ea;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.details-button {
+  background-color: #f0f0f0;
+  color: #6200ea;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.details-button:hover {
+  background-color: #ddd;
+}
