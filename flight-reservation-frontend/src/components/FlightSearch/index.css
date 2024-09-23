@@ -5,7 +5,7 @@
   padding: 24px 32px; /* İçerik boşlukları */
   border-radius: 12px; /* Köşe yuvarlatma */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
-  max-width: 1200px; /* Maksimum genişlik */
+  max-width: 1500px; /* Maksimum genişlik */
   margin: 20px auto; /* Ortalamak için margin */
   position: relative; /* Konumlandırma için relative */
   font-family: Arial, sans-serif; /* Yazı tipi */
@@ -47,7 +47,7 @@
 }
 
 .trip-type button.active {
-  background-color: #1a73e8; /* Aktif buton arka planı */
+  background-color: #7d4dbf; /* Aktif buton arka planı */
   color: #ffffff; /* Aktif buton yazı rengi */
 }
 
@@ -114,7 +114,7 @@
 
 #show-flights {
   padding: 12px 30px; /* Buton boşlukları */
-  background-color: #1a73e8; /* Buton arka plan rengi */
+  background-color: #7d4dbf; /* Buton arka plan rengi */
   color: #ffffff; /* Yazı rengi */
   border: none;
   border-radius: 8px; /* Köşe yuvarlatma */
@@ -125,7 +125,7 @@
 }
 
 #show-flights:hover {
-  background-color: #155ab2; /* Hover arka plan rengi */
+  background-color: #7d4dbf; /* Hover arka plan rengi */
 }
 
 /* Medya Sorgusu: Mobil Ekranlar için Düzenleme */

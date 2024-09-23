@@ -1,6 +1,6 @@
 /* Flights Page Ana Stil */
 .flights-page {
-    background-color: #f3f4f6; /* Sayfa arka plan rengi */
+    background-color: #1473E6; /* Sayfa arka plan rengi */
     display: flex;
     flex-direction: column;
     align-items: center; /* Ortalamak için */
@@ -10,24 +10,25 @@
 
 /* Mavi üst arka plan */
 .header-background {
-    background-color: #1e88e5; /* Mavi arka plan rengi */
+    background-color: #1473E6; /* Mavi arka plan rengi (orijinal görseldeki renge daha yakın) */
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+   
     padding: 16px 0;
 }
 
 .header-container {
-    max-width: 1200px; /* Maksimum genişlik */
+    max-width: 1170px; /* Maksimum genişlik */
     width: 100%; /* Tam genişlik */
-    padding: 16px;
+    padding: 15px;
     background-color: #ffffff; /* Beyaz arka plan rengi */
     border-radius: 12px; /* Köşe yuvarlatma */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge */
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .header-info {
@@ -47,17 +48,35 @@
 }
 
 .star {
-    color: #0a0a0a; /* Sarı yıldız rengi */
+    color: #070707; /* Sarı yıldız rengi */
     font-size: 1.5rem; /* Yıldız boyutu */
     margin-right: 4px; /* Yıldızlar arası boşluk */
 }
 
+/* Avg Fare Bilgisi */
 .avg-fare {
-    font-size: 1rem; /* Yazı boyutu */
     display: flex;
     align-items: center;
-    margin-left: auto; /* Sağa yasla */
+    font-size: 1rem;
+    color: #202124;
+    margin-left: 20px;
 }
+
+.avg-fare .info-icon {
+    width: 24px; /* İkon genişliği */
+    height: 24px; /* İkon yüksekliği */
+    background-color: #e0f7fa; /* Arka plan rengi (açık mavi) */
+    border-radius: 50%; /* Tam yuvarlak */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal; /* İtalik olmaması için */
+    color: #007aff; /* İkon rengi */
+    font-size: 14px; /* İkon boyutu */
+    margin-right: 8px; /* Sağdan boşluk */
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
 
 .info-icon {
     font-size: 1.2rem;
@@ -69,20 +88,23 @@
     width: 100%;
     max-width: 1200px;
     margin-top: 20px; /* Üst boşluk */
-    background-color: #ffffff; /* Beyaz arka plan */
+    margin-left: 0;
+    background-color: #e7e0e0; /* Beyaz arka plan */
     padding: 20px; /* İçerik boşlukları */
     border-radius: 12px; /* Köşe yuvarlatma */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    
 }
 
-/* Sort By Bölümü */
 .sort-by {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     font-size: 1rem; /* Yazı boyutu */
     color: #3c4043; /* Yazı rengi */
     margin-bottom: 20px; /* Alt boşluk */
+    gap: 8px; /* Elemanlar arası boşluk */
+    padding-left: 16px; /* Soldan iç boşluk */
 }
 
 /* Uçuş Listesi */

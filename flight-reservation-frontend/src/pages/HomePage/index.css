@@ -1,10 +1,17 @@
 .root {
   font-family: "Arial", sans-serif;
-  background-color: #f3e8fd;
+  background-color: #f5f4f6;
   height: 100vh;
 }
 
 .container {
+  background-color: #f2e8f5;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 20px;
+}
+.square{
   display: flex;
   padding: 20px;
 }

@@ -34,9 +34,10 @@ export default function HomePage() {
     ];
 
     return (
+        <div className="container">
         <div className="root">
             <Header />
-            <div className="container">
+            <div className="square">
                 <div className="main">
                     <FlightSearch />
                     <div className="content">
@@ -50,6 +51,7 @@ export default function HomePage() {
                 </div>
                 <Sidebar />
             </div>
+        </div>
         </div>
     );
 }
