@@ -1,56 +1,104 @@
+/* src/components/FlightCard/index.css */
+
 .flight-card {
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #ffffff;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  justify-content: space-between; /* Fiyatlar ve bilgiler arasındaki boşluk */
+  align-items: center;
+  background-color: #ffffff; /* Beyaz arka plan */
+  padding: 20px 32px; /* Görseldeki içerik boşluğu */
+  border-radius: 16px; /* Görseldeki gibi daha fazla köşe yuvarlatma */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Görseldeki daha belirgin gölge */
+  margin-bottom: 24px; /* Alt boşluk */
+  font-family: 'Poppins', sans-serif; /* Görseldeki yazı tipi */
 }
 
 .flight-info {
   display: flex;
-  justify-content: space-between;
-  flex: 1;
-}
-
-.flight-info div {
-  display: flex;
-  flex-direction: column;
-}
-
-.airport,
-.duration,
-.airline {
-  margin-top: 5px;
-}
-
-.flight-price {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  gap: 32px; /* Zaman ve detaylar arasındaki boşluk */
   align-items: center;
 }
 
-.flight-price button {
-  padding: 10px 20px;
-  background-color: #6200ea;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 5px;
+.flight-timing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.details-button {
-  background-color: #f0f0f0;
-  color: #6200ea;
-  border: none;
-  cursor: pointer;
-  padding: 10px 20px;
-  border-radius: 5px;
+.departure-time,
+.arrival-time {
+  font-size: 1.2rem; /* Saatlerin boyutu büyütüldü */
+  font-weight: bold; /* Kalın yazı */
+  color: #333333; /* Yazı rengi */
 }
 
-.details-button:hover {
-  background-color: #ddd;
+.airport-code {
+  font-size: 1rem; /* Havalimanı kodları */
+  color: #70757a; /* Gri yazı rengi */
+}
+
+.flight-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* Detaylar arasındaki boşluk */
+}
+
+.flight-type {
+  font-size: 0.9rem; /* Uçuş türü */
+  color: #5f6368; /* Gri renk */
+}
+
+.duration {
+  font-size: 0.9rem; /* Süre yazısı */
+  color: #3c4043; /* Siyahımsı renk */
+}
+
+.airline {
+  font-size: 0.9rem; /* Havayolu yazısı */
+  color: #3c4043; /* Siyahımsı renk */
+}
+
+.flight-prices {
+  display: flex;
+  gap: 12px; /* Fiyat kutuları arasındaki boşluk */
+  align-items: center; /* Dikey ortalama */
+}
+
+.price-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f3f4; /* Kutuların arka plan rengi */
+  padding: 12px 16px; /* İçerik boşluğu artırıldı */
+  border-radius: 12px; /* Görseldeki gibi daha yuvarlak köşeler */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Daha belirgin gölge */
+  min-width: 80px; /* Minumum genişlik */
+}
+
+.price-type {
+  font-size: 0.8rem; /* Fiyat türü yazı boyutu */
+  color: #5f6368; /* Gri renk */
+}
+
+.price-value {
+  font-size: 1.2rem; /* Fiyat yazı boyutu büyütüldü */
+  font-weight: bold; /* Kalın yazı */
+  color: #333333; /* Siyahımsı renk */
+}
+
+@media (max-width: 768px) {
+  .flight-card {
+    flex-direction: column; /* Mobilde dikey düzen */
+    align-items: flex-start;
+    padding: 16px 20px; /* Mobilde iç boşluk */
+  }
+
+  .flight-info {
+    margin-bottom: 16px; /* Bilgi ve fiyatlar arası boşluk */
+    gap: 20px; /* Mobildeki boşluk */
+  }
+
+  .flight-prices {
+    justify-content: flex-start; /* Fiyatlar sola hizalı */
+  }
 }

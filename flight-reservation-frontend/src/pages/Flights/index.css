@@ -1,0 +1,189 @@
+/* Flights Page Ana Stil */
+.flights-page {
+    background-color: #f3f4f6; /* Sayfa arka plan rengi */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ortalamak için */
+    min-height: 100vh; /* Sayfa yüksekliği */
+    padding-top: 20px; /* Üst boşluk */
+}
+
+/* Mavi üst arka plan */
+.header-background {
+    background-color: #1e88e5; /* Mavi arka plan rengi */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.header-container {
+    max-width: 1200px; /* Maksimum genişlik */
+    width: 100%; /* Tam genişlik */
+    padding: 16px;
+    background-color: #ffffff; /* Beyaz arka plan rengi */
+    border-radius: 12px; /* Köşe yuvarlatma */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between; /* Elemanlar arası boşluk */
+    width: 100%;
+    max-width: 1200px;
+    color: #ffffff; /* Beyaz yazı rengi */
+    margin-top: 10px; /* Üst boşluk */
+    padding: 0 16px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.star {
+    color: #0a0a0a; /* Sarı yıldız rengi */
+    font-size: 1.5rem; /* Yıldız boyutu */
+    margin-right: 4px; /* Yıldızlar arası boşluk */
+}
+
+.avg-fare {
+    font-size: 1rem; /* Yazı boyutu */
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Sağa yasla */
+}
+
+.info-icon {
+    font-size: 1.2rem;
+    margin-right: 4px;
+}
+
+/* Beyaz arka planlı içerik kısmı */
+.flights-container {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px; /* Üst boşluk */
+    background-color: #ffffff; /* Beyaz arka plan */
+    padding: 20px; /* İçerik boşlukları */
+    border-radius: 12px; /* Köşe yuvarlatma */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+/* Sort By Bölümü */
+.sort-by {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem; /* Yazı boyutu */
+    color: #3c4043; /* Yazı rengi */
+    margin-bottom: 20px; /* Alt boşluk */
+}
+
+/* Uçuş Listesi */
+.flight-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Uçuş kartları arası boşluk */
+}
+
+/* Uçuş Kartları */
+.flight-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* Beyaz arka plan */
+    padding: 16px 24px;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    margin-bottom: 16px; /* Alt boşluk */
+    transition: box-shadow 0.3s ease; /* Hover efekti */
+}
+
+.flight-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Hover gölge efekti */
+}
+
+.flight-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.flight-details {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.flight-timing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.departure-time, .arrival-time {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.airport-code {
+    font-size: 0.875rem;
+    color: #70757a;
+}
+
+/* Fiyat Kutuçukları */
+.flight-prices {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.price-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f3f4;
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    min-width: 60px; /* Minimum genişlik */
+}
+
+.price-type {
+    font-size: 0.75rem;
+    color: #5f6368;
+}
+
+.price-value {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+/* Mobil Stil */
+@media (max-width: 768px) {
+    .flight-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 16px;
+    }
+
+    .flight-details {
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+
+    .flight-prices {
+        width: 100%;
+        justify-content: space-around;
+    }
+}

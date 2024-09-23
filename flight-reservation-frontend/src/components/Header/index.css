@@ -1,26 +1,74 @@
+/* src/components/Header/index.css */
 .header {
+  background-color: #ffffff; /* Beyaz arka plan rengi */
+  padding: 20px 40px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background-color: #ffffff;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #d1c4e9; /* Alt çizgi */
+  position: sticky; /* Üstte sabitle */
+  top: 0; /* Yukarıya sabitle */
+  z-index: 100; /* Üstte kalması için */
 }
 
 .logo {
-  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  font-size: 1.5rem; /* İkon boyutu */
+  color: #7d4dbf; /* İkon rengi */
+  margin-right: 8px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  color: #7d4dbf; /* Logo rengi */
 }
 
 nav ul {
   list-style: none;
   display: flex;
   align-items: center;
+  gap: 2rem; /* Menü öğeleri arası boşluk */
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-  margin: 0 20px;
+  display: flex;
+  align-items: center;
   cursor: pointer;
-  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #3C4043;
+  transition: color 0.3s ease;
+}
+
+nav ul li .nav-icon {
+  font-size: 1.2rem;
+  color: #7d4dbf; /* Menü ikon rengi */
+  margin-right: 5px;
+}
+
+nav ul li:hover {
+  color: #7d4dbf; /* Hover'da renk değişimi */
+}
+
+/* src/components/Footer/index.css */
+.footer {
+  background-color: #ffffff; /* Beyaz arka plan rengi */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  position: fixed; /* Sayfanın altına sabitle */
+  bottom: 0;
+  width: 100%;
+  z-index: 10; /* Üstte kalması için */
+  border-top: 2px solid #d1c4e9; /* Üst çizgi */
+  font-size: 0.9rem; /* Yazı boyutu */
+  color: #5e35b1; /* Yazı rengi */
 }

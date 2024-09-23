@@ -1,62 +1,141 @@
+/* src/components/FlightSearch/index.css */
+
 .flight-search {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  position: relative;
+  background-color: #ffffff; /* Beyaz arka plan */
+  padding: 24px 32px; /* İçerik boşlukları */
+  border-radius: 12px; /* Köşe yuvarlatma */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  max-width: 1200px; /* Maksimum genişlik */
+  margin: 20px auto; /* Ortalamak için margin */
+  position: relative; /* Konumlandırma için relative */
+  font-family: Arial, sans-serif; /* Yazı tipi */
+}
+
+.flight-search h2 {
+  font-size: 1.5rem; /* Başlık boyutu */
+  color: #202124; /* Başlık rengi */
+  margin-bottom: 20px; /* Başlık altı boşluk */
+  font-weight: 600; /* Başlık kalınlığı */
 }
 
 .trip-type-container {
   position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.search-bar {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.search-bar input {
-  flex: 1;
-  margin-right: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-#show-flights {
-  padding: 10px 20px;
-  background-color: #6200ea;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  top: 2px; 
+  right: 24px; 
 }
 
 .trip-type {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  background-color: #f1f3f4; /* Arka plan rengi */
+  border-radius: 30px; /* Yuvarlatılmış köşeler */
+  padding: 5px; /* İçerik boşluğu */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Hafif gölge */
 }
 
 .trip-type button {
   flex: 1;
-  padding: 10px;
+  padding: 8px 16px; /* İçerik boşluğu */
   border: none;
   cursor: pointer;
-  margin-right: 10px;
-  border-radius: 5px;
-  background-color: #f0f0f0;
-  color: #333;
+  margin-right: 5px; /* Butonlar arası boşluk */
+  border-radius: 20px; /* Yuvarlak köşeler */
+  background-color: #f8f9fa; /* Varsayılan arka plan rengi */
+  color: #3c4043; /* Yazı rengi */
+  font-size: 0.875rem; /* Yazı boyutu */
+  transition: background-color 0.3s ease; /* Hover efekti */
 }
 
-.trip-type .active {
-  background-color: #6200ea;
-  color: #ffffff;
+.trip-type button.active {
+  background-color: #1a73e8; /* Aktif buton arka planı */
+  color: #ffffff; /* Aktif buton yazı rengi */
 }
 
 .trip-type button:last-child {
-  margin-right: 0;
+  margin-right: 0; /* Son butonda boşluk yok */
+}
+
+.search-bar {
+  display: flex;
+  gap: 16px; /* Giriş alanları arasındaki boşluk */
+  margin-bottom: 24px; /* Alt boşluk */
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center; /* İkonları ve input'u hizalamak için */
+  width: 100%; /* Genişliği ayarla */
+}
+
+.input-icon {
+  margin-right: 8px; /* İkon ile input arasındaki boşluk */
+  font-size: 1.2rem; /* İkon boyutu */
+}
+
+.search-bar input[type="text"],
+.search-bar input[type="date"] {
+  flex: 1; /* Genişlik ayarı */
+  padding: 12px 16px; /* İçerik boşluğu */
+  border: 1px solid #dadce0; /* Kenar çizgisi */
+  border-radius: 8px; /* Köşe yuvarlatma */
+  font-size: 1rem; /* Yazı boyutu */
+  color: #3c4043; /* Yazı rengi */
+  outline: none; /* Odaklanıldığında dış kenarlık görünmesin */
+}
+
+/* Date input stilini tamamen gizlemek için */
+.search-bar input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none; /* Takvim ikonu gizle */
+}
+
+.search-bar input[type="date"] {
+  color: transparent; /* Yazıyı şeffaf yap */
+  position: relative; /* Konumlandırma */
+}
+
+.search-bar input[type="date"]::before {
+  content: attr(placeholder); /* Placeholder metnini içeriğe koy */
+  position: absolute; /* Konumlandırma */
+  top: 50%; /* Ortalamak için yukarıdan 50% */
+  left: 16px; /* Soldan içeri çek */
+  transform: translateY(-50%); /* Yukarıdan ortalamak için */
+  color: #3c4043; /* Yazı rengi */
+  font-size: 1rem; /* Yazı boyutu */
+}
+
+.search-bar input[type="date"]:focus::before,
+.search-bar input[type="date"]:valid::before {
+  content: ""; /* Bir şey yazıldığında placeholder'ı sil */
+}
+
+.search-bar input[type="date"]:focus {
+  color: #3c4043; /* Input'a odaklanıldığında yazıyı görünür yap */
+}
+
+#show-flights {
+  padding: 12px 30px; /* Buton boşlukları */
+  background-color: #1a73e8; /* Buton arka plan rengi */
+  color: #ffffff; /* Yazı rengi */
+  border: none;
+  border-radius: 8px; /* Köşe yuvarlatma */
+  cursor: pointer;
+  font-size: 1rem; /* Yazı boyutu */
+  font-weight: 500; /* Yazı kalınlığı */
+  transition: background-color 0.3s ease; /* Hover efekti */
+}
+
+#show-flights:hover {
+  background-color: #155ab2; /* Hover arka plan rengi */
+}
+
+/* Medya Sorgusu: Mobil Ekranlar için Düzenleme */
+@media (max-width: 768px) {
+  .flight-search {
+    padding: 16px; /* Mobilde daha az padding */
+  }
+
+  .search-bar {
+    flex-direction: column; /* Giriş alanlarını dikey hizalama */
+    gap: 12px; /* Giriş alanları arası boşluk (mobil için) */
+  }
 }
