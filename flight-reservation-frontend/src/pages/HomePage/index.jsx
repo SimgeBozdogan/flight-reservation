@@ -14,13 +14,12 @@ export default function HomePage() {
         const fetchFlightData = async () => {
             try {
                 const response = await axios.get('http://localhost:3000/api/flights');
-                setFlightData(response.data);
+                setFlightData(response.data.flights);
             } catch (error) {
                 console.error("Error fetching flight data:", error);
             }
         };
         
-
         fetchFlightData();
     }, []);
 
