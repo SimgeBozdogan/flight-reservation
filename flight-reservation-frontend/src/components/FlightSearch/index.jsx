@@ -1,4 +1,4 @@
-// src/components/FlightSearch/index.jsx
+
 import React, { useEffect, useState } from 'react';
 import { FaPlaneDeparture, FaCity, FaCalendarAlt } from 'react-icons/fa';
 import './index.css';
@@ -7,12 +7,11 @@ const FlightSearch = () => {
   const [tripType, setTripType] = useState('Round Trip');
 
   useEffect(() => {
-    // Date input alanlarına placeholder'ı gizlemek için odaklanınca placeholder'ı kaldır
     const dateInputs = document.querySelectorAll('input[type="date"]');
     dateInputs.forEach(input => {
-      input.placeholder = ''; // Başlangıçta placeholder'ı boş bırak
+      input.placeholder = ''; // Başlangıçta placeholder'ı boş bırakmaya yarıyor
       input.addEventListener('focus', () => {
-        input.placeholder = ''; // Focus olduğunda placeholder'ı boş bırak
+        input.placeholder = ''; // Focus olduğunda placeholder'ı boş bırakmaya yarıyor
       });
     });
   }, []);
@@ -22,9 +21,9 @@ const FlightSearch = () => {
   };
 
   const handleShowFlights = () => {
-    // Show Flights butonuna tıklanınca yapılacak işlemler burada tanımlanır
+    // Show Flights butonuna tıklanınca yapılacak işlemler burada tanımladım
     console.log(`Showing flights for ${tripType}`);
-    // İlgili arama işlemlerini burada gerçekleştirebilirsin.
+
   };
 
   return (
@@ -32,14 +31,14 @@ const FlightSearch = () => {
       <h2>Book Your Flight</h2>
       <div className="trip-type-container">
         <div className="trip-type">
-          <button 
-            className={tripType === 'Round Trip' ? 'active' : ''} 
+          <button
+            className={tripType === 'Round Trip' ? 'active' : ''}
             onClick={() => handleTripTypeChange('Round Trip')}
           >
             Round Trip
           </button>
-          <button 
-            className={tripType === 'One Way' ? 'active' : ''} 
+          <button
+            className={tripType === 'One Way' ? 'active' : ''}
             onClick={() => handleTripTypeChange('One Way')}
           >
             One Way
@@ -57,11 +56,11 @@ const FlightSearch = () => {
         </div>
         <div className="input-wrapper">
           <span className="input-icon"><FaCalendarAlt /></span>
-          <input type="date" placeholder="" /> {/* Placeholder boş bırakıldı */}
+          <input type="date" placeholder="" /> 
         </div>
         <div className="input-wrapper">
           <span className="input-icon"><FaCalendarAlt /></span>
-          <input type="date" placeholder="" /> {/* Placeholder boş bırakıldı */}
+          <input type="date" placeholder="" /> 
         </div>
       </div>
       <button id="show-flights" onClick={handleShowFlights}>

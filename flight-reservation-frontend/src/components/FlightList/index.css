@@ -1,11 +1,10 @@
-/* src/components/FlightList/index.css */
 
 .flight-list {
     width: 100%;
     max-width: 1200px;
 }
 
-/* FlightCard Stil */
+
 .flight-card {
     display: flex;
     justify-content: space-between;
@@ -65,7 +64,7 @@
     text-decoration: underline;
 }
 
-/* Fiyat Kutucukları */
+
 .flight-prices {
     display: flex;
     gap: 8px;
@@ -78,7 +77,7 @@
     align-items: center;
     justify-content: center;
     background-color: #f3f4f6;
-    padding: 8px 12px; /* İçerik boşluğu */
+    padding: 8px 12px; 
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }

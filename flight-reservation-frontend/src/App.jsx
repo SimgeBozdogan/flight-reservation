@@ -1,8 +1,8 @@
 // src/App.jsx
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Flights from './pages/Flights'; // Flights sayfasını import ediyoruz
-import HomePage from './pages/HomePage'; // HomePage sayfasını import ediyoruz
+import Flights from './pages/Flights'; 
+import HomePage from './pages/HomePage'; 
 
 function App() {
   return (

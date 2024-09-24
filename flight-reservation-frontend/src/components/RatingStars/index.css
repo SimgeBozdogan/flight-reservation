@@ -1,44 +1,42 @@
-/* Yıldız grupları için stil */
 .header-info {
     display: flex;
     align-items: center;
-    gap: 12px; /* Yıldız grupları arasındaki boşluk */
+    gap: 12px;
 }
 
 .rating-group {
     display: flex;
     align-items: center;
-    flex-direction: column; /* Yıldızları alt alta sıralamak için */
+    flex-direction: column;
 }
 
 .rating-group + .rating-group {
-    margin-left: 20px; /* Yıldız grupları arasındaki boşluk */
+    margin-left: 20px;
     position: relative;
 }
 
 .rating-group + .rating-group:before {
     content: "";
     position: absolute;
-    top: 50%; /* Çizgiyi ortalamak için */
-    left: -12px; /* Çizginin konumu */
+    top: 50%;
+    left: -12px;
     transform: translateY(-50%);
     width: 1px;
     height: 50px;
-    background-color: #d1d1d1; /* Çizgi rengi */
+    background-color: #d1d1d1;
 }
 
 .rating {
     display: flex;
-    gap: 4px; /* Yıldızlar arasındaki boşluk */
+    gap: 4px;
     margin-bottom: 5px;
 }
 
 .star {
-    color: #ffbe00; /* Yıldız rengi */
-    font-size: 20px; /* Yıldız boyutu */
+    color: #ffbe00;
+    font-size: 20px;
 }
 
-/* Derece gruplarının ortalanması için stil */
 .rating-group {
     display: flex;
     align-items: center;

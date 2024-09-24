@@ -26,12 +26,14 @@ app.get("/api/flights", async (req, res) => {
       }
     );
 
+    console.log("API Response:", response.data); 
     res.json(response.data);
   } catch (error) {
     console.error("Error fetching flight data:", error);
     res.status(500).json({ error: "Failed to fetch flight data" });
   }
 });
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import FilterBar from '../../components/FilterBar';
 import FlightList from '../../components/FlightList';
-import RatingStars from '../../components/RatingStars'; // Derecelendirme Yıldızları komponentini ekledik
+import RatingStars from '../../components/RatingStars'; 
 import './index.css';
 
 export default function FlightsPage() {
@@ -19,15 +19,15 @@ export default function FlightsPage() {
                     <div className="header-container">
                         <FilterBar />
                         <div className="header-info">
-                            {/* Üç farklı derecelendirme grubu ekledik */}
+                            {/* Üç farklı derecelendirme grubu ekledim */}
                             <div className="rating-group">
-                                <RatingStars rating={4.5} /> {/* 1. grup: 4.5 puan */}
+                                <RatingStars rating={4.5} /> 
                             </div>
                             <div className="rating-group">
-                                <RatingStars rating={3.0} /> {/* 2. grup: 3.0 puan */}
+                                <RatingStars rating={3.0} /> 
                             </div>
                             <div className="rating-group">
-                                <RatingStars rating={5.0} /> {/* 3. grup: 5.0 puan */}
+                                <RatingStars rating={5.0} /> 
                             </div>
                             <div className="avg-fare">
                                 <i className="info-icon">ℹ</i> Avg Fare: $225

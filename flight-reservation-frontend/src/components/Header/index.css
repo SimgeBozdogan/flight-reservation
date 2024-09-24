@@ -1,15 +1,14 @@
-/* src/components/Header/index.css */
 .header {
-  background-color: #ffffff; /* Beyaz arka plan rengi */
+  background-color: #ffffff;
   padding: 20px 40px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #d1c4e9; /* Alt çizgi */
-  position: sticky; /* Üstte sabitle */
-  top: 0; /* Yukarıya sabitle */
-  z-index: 100; /* Üstte kalması için */
+  border-bottom: 2px solid #d1c4e9;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .logo {
@@ -18,22 +17,22 @@
 }
 
 .logo-icon {
-  font-size: 1.5rem; /* İkon boyutu */
-  color: #7d4dbf; /* İkon rengi */
+  font-size: 1.5rem;
+  color: #7d4dbf;
   margin-right: 8px;
 }
 
 .logo-text {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #7d4dbf; /* Logo rengi */
+  color: #7d4dbf;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 2rem; /* Menü öğeleri arası boşluk */
+  gap: 2rem;
   margin: 0;
   padding: 0;
 }
@@ -44,31 +43,30 @@ nav ul li {
   cursor: pointer;
   font-size: 1rem;
   font-weight: 500;
-  color: #3C4043;
+  color: #3c4043;
   transition: color 0.3s ease;
 }
 
 nav ul li .nav-icon {
   font-size: 1.2rem;
-  color: #7d4dbf; /* Menü ikon rengi */
+  color: #7d4dbf;
   margin-right: 5px;
 }
 
 nav ul li:hover {
-  color: #7d4dbf; /* Hover'da renk değişimi */
+  color: #7d4dbf;
 }
 
-/* src/components/Footer/index.css */
 .footer {
-  background-color: #ffffff; /* Beyaz arka plan rengi */
+  background-color: #ffffff;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge */
-  position: fixed; /* Sayfanın altına sabitle */
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 10; /* Üstte kalması için */
-  border-top: 2px solid #d1c4e9; /* Üst çizgi */
-  font-size: 0.9rem; /* Yazı boyutu */
-  color: #5e35b1; /* Yazı rengi */
+  z-index: 10;
+  border-top: 2px solid #d1c4e9;
+  font-size: 0.9rem;
+  color: #5e35b1;
 }

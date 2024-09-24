@@ -1,4 +1,4 @@
-// src/components/RatingStars/index.jsx
+
 import React from 'react';
 import './index.css';
 

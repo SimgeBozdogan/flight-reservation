@@ -1,61 +1,60 @@
 .sidebar {
-  width: 250px; /* Genişlik artırıldı */
+  width: 250px;
   display: flex;
   flex-direction: column;
-  margin-left: 20px; /* Yan boşluk */
-  background-color: #ffffff; /* Arka plan rengi */
-  border-radius: 12px; /* Köşe yuvarlatma */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
-  padding: 16px; /* İçerik boşluğu */
+  margin-left: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
 }
 
 .sidebar-item {
-  background-color: #f7f6f8; /* Hafif lila arka plan */
-  padding: 16px 12px; /* İçerik boşluğu optimize edildi */
-  margin-bottom: 16px; /* Alt boşluk artırıldı */
-  border-radius: 12px; /* Köşe yuvarlatma */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+  background-color: #f7f6f8;
+  padding: 16px 12px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Hover efekti geçiş */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .sidebar-item:hover {
-  background-color: #e1d1f8; /* Hover'da daha açık lila renk */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Hover'da gölge artırıldı */
+  background-color: #e1d1f8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .sidebar-item img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 12px; /* Alt boşluk artırıldı */
-  border-radius: 8px; /* Resim köşe yuvarlatma */
+  margin-bottom: 12px;
+  border-radius: 8px;
 }
 
 .sidebar-item div {
-  font-size: 1rem; /* Yazı boyutu */
-  color: #4a148c; /* Yazı rengi değiştirildi */
-  font-weight: 500; /* Yazı kalınlığı artırıldı */
+  font-size: 1rem;
+  color: #4a148c;
+  font-weight: 500;
 }
 
-/* Mobil Ekranlar için Düzenleme */
 @media (max-width: 768px) {
   .sidebar {
     width: 100%;
     margin-left: 0;
-    padding: 12px; /* Mobilde daha az padding */
-    box-shadow: none; /* Mobilde gölge kaldırıldı */
+    padding: 12px;
+    box-shadow: none;
   }
 
   .sidebar-item {
-    padding: 12px 8px; /* Mobilde içerik boşluğu azaldı */
-    margin-bottom: 12px; /* Mobilde alt boşluk azaldı */
+    padding: 12px 8px;
+    margin-bottom: 12px;
   }
 
   .sidebar-item div {
-    font-size: 0.875rem; /* Mobilde yazı boyutu küçültüldü */
+    font-size: 0.875rem;
   }
 }
